@@ -55,10 +55,12 @@ Widget build(BuildContext context){
           
 
           ),
-        )
-      ],
+        
+        ]
     ),
-    ) ,
-  );
+      
+    ),
+    ) ;
+  
 }
 }
