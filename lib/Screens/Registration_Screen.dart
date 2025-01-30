@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:registration_form/Screens/Details_Screen.dart';
 
 class  RegistrationScreen extends StatefulWidget{
   _RegistrationScreenState createState() => _RegistrationScreenState();
@@ -55,6 +56,20 @@ Widget build(BuildContext context){
           
 
           ),
+          SizedBox(height: 30,),
+          if(isRegistered)
+          ElevatedButton(onPressed:(){
+            Navigator.push(context,MaterialPageRoute(builder: (context)
+            =>DetailsScreen(
+              firstname:firstnameController.text,
+              lastname:lastnameController.text,
+              email:emailController.text,
+            )
+            )
+             );
+          } , child:
+          Text("Veiw Registration Details")
+          )
         
         ]
     ),
